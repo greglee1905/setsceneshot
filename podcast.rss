@@ -27,14 +27,12 @@
 			<itunes:name>{{ site.author }}</itunes:name>
 			<itunes:email>{{ site.email }}</itunes:email>
 		</itunes:owner>
-		<itunes:image href="{{ site.url }}/assets/images/PTP_logo_itunes.jpg" />
-		<itunes:category text="Technology" />
-		<itunes:category text="Education">
-			<itunes:category text="Podcasting" />
+		<itunes:image href="{{ site.url }}/assets/images/sss_logo.jpg" />
+		<itunes:category text="Arts">
+			<itunes:category text="Visual Arts" />
 		</itunes:category>
-		<itunes:category text="Society &amp; Culture">
-			<itunes:category text="Philosophy" />
-			<itunes:category text="Self-help" />
+		<itunes:category text="TV &amp; Film">
+			<itunes:category text="Film Reviews" />
 		</itunes:category>
 		<itunes:explicit>yes</itunes:explicit>
 		{% for post in site.episodes %}
@@ -50,10 +48,10 @@
 				<itunes:summary>{{ post.summary | xml_escape }}</itunes:summary>
 				<itunes:duration>{{ post.duration }}</itunes:duration>
 				<itunes:keywords>{{ post.keywords }}</itunes:keywords>
-				<itunes:image href="{{ site.url }}/assets/images/PTP_logo_itunes.jpg" />
+				<itunes:image href="{{ site.url }}/assets/images/sss_logo.jpg" />
 				<itunes:explicit>{{ post.explicit }}</itunes:explicit>
 				<itunes:block>{{ post.block }}</itunes:block>
-				<itunes:new-feed-url>http://preservethispodcast.org/podcast.rss</itunes:new-feed-url>
+				<itunes:new-feed-url>https://greglee1905.github.io/setsceneshot/podcast.rss</itunes:new-feed-url>
 			</item>
 		{% endfor %}
 	</channel>
