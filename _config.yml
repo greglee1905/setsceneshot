@@ -1,5 +1,3 @@
-
-
 # Markdown settings
 markdown: kramdown
 
@@ -25,7 +23,7 @@ plugins:
 title:          Set, Scene, Shot.
 description:    "Curious about the meaning behind the burning of a boyfriend in Midsommar? Or the doppelganger dance in Annihilation? Join us for Set Scene Shot where we dissect scenes and themes from your favorite independent films. We’ll examine the cultural context, visual symbolism and subtle artistry which ground iconic cinema scenes. Airing Tuesdays, every other week!"
 email:          gerg350z@gmail.com
-subtitle:       ""
+subtitle:       "none"
 url:            https://greglee1905.github.io/setsceneshot/
 language:       en-us
 author:         Vasiliki Karahalios & Greg Lee
