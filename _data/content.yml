@@ -1,16 +1,14 @@
 
 google_analytics: UA-XXXXX-Y
 
-zine_link: /assets/PreserveThisPodcast_Zine_Online.pdf
-zinePrint_link: /assets/PreserveThisPodcast_Zine_Print.pdf
-survey_link: /#survey
-twitter_link: https://twitter.com/preservethispod
+
+twitter_link: https://greglee1905.github.io/setsceneshot/
 
 applepodcasts_link: 
 googlepodcasts_link:
 stitcher_link: 
 radiopublic_link: 
-rss_link: http://preservethispodcast.org/podcast.rss
+rss_link: https://greglee1905.github.io/setsceneshot/podcast.rss
 
 episodes:
   - name: Ep1 - Atlantics

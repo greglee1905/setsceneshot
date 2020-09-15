@@ -3,12 +3,18 @@ $fa-font-path: "/assets/node_modules/@fortawesome/fontawesome-free/webfonts";
 @import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC|Poppins:200,400,700');
 
-$primary: #D79C34;
+$primary: #212222;
 $primary-light: #F9E5D0;
-$blue: #20285C;
-$pink: #ECB6B8;
-$pink-light: #F5DBDC;
+$blue: #101770;
+$black:  #050505;
+$red: #e22323;
+$purple: #d4a9ec;
+$yellow:#e2d51f;
 $white: #FFFFFF;
+
+$pink: #ECB6B8;
+$pink-light: #070606;
+
 
 $family-primary:  'Poppins', sans-serif;
 $family-secondary: 'Patrick Hand SC', cursive;
@@ -19,7 +25,7 @@ $radius-large: 0px;
 
 $navbar-background-color: rgba(255,255,255,0);
 $footer-background-color: $primary;
-$navbar-burger-color: $white;
+$navbar-burger-color: $black;
 
 @import 'node_modules/bulma/bulma';
 
@@ -60,8 +66,8 @@ header {
 	z-index:1;
 	transition: background .3s;
 	h1 {
-		background:$blue;
-		color:$white;
+		background:$white;
+		color:$black;
 		padding: $button-padding-vertical $button-padding-horizontal;
 		font-size:$size-5;
 		font-weight:$weight-bold;
@@ -73,7 +79,7 @@ header {
 			@include strong-type();
 			display:block;
 			margin:10px 0 9px 1.5rem;
-			color:$blue;
+			color:$white;
 			transition: color .3s;
 		}
 	}
@@ -95,7 +101,7 @@ header {
 		margin-bottom:0;
 		height:43px;
 		width:43px;
-		background:$blue;
+		background:$black;
 		span {
 			height:2px;
 			background:$white;
@@ -113,16 +119,17 @@ header {
 	  position: fixed;
 	  top: 0;
 	  width: 100%;
-	  background:$blue;
+	  background:$white;
 
 	  @include desktop {
 	  	h1 {
-	  		padding-left:10px;
+			  padding-left:10px;
+			  color: $black 
 	  	}
 		nav.navbar {
 			padding-right:10px;
 	  		a {
-	  			color:$white;
+	  			color:$black;
 	 		}
 		}
 	  }
@@ -137,6 +144,7 @@ header {
 section#intro {
 	background:$primary;
 	position:relative;
+	
 	h2 {
 		font-size:$size-1;
 		color:$white;
@@ -169,24 +177,31 @@ section#intro {
 			}
 		}
 	}
-	&:before {
-		content:"";
-		display:block;
-		position:absolute;
-		height:100%;
-		width:100%;
-		z-index:0;
-		opacity:.15;
-		background: url('../images/splash.gif') no-repeat center center;
-		background-size:contain;
-		@include touch(){
-			background-image: url('../images/splash_mobile.gif');
-		}
-	}
+
+	.mycenter {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	  }
+
+	// &:before {
+	// 	content:"";
+	// 	display:block;
+	// 	position:absolute;
+	// 	height:100%;
+	// 	width:100%;
+	// 	z-index:0;
+	// 	opacity:.15;
+	// 	background: url('../images/splash.gif') no-repeat center center;
+	// 	background-size:contain;
+	// 	@include touch(){
+	// 		background-image: url('../images/splash_mobile.gif');
+	// 	}
+	// }
 }
 
-section#episodes {
-	background:$blue;
+section#abouttheshow {
+	background:$red;
 	h2 {
 		color:$white;
 		margin-bottom:$gap/4;
@@ -198,10 +213,47 @@ section#episodes {
 		}
 	}
 	.box {
+		background: $red;
 		.count {
 			display:block;
+			color: $white;
+			background:$blue;
+			font-weight:$weight-bold;
+			font-size:$size-3;
+			border-radius:50%;
+			height:45px;
+			width:45px;
+			text-align:center;
+			padding:0 2px 3px 0;
+		}
+		h3 {
+			font-family: $family-secondary;
+			font-size:$size-3;
+			line-height:$size-3;
+			font-weight:bold;
+			margin-bottom:.5rem;
 			color:$white;
-			background:$pink;
+		}
+	}
+}
+section#episodes {
+	background:$primary;
+	h2 {
+		color:$white;
+		margin-bottom:$gap/4;
+		font-size:$size-3;
+		font-weight:$weight-bold;
+		letter-spacing:.66px;
+		@include mobile {
+			font-size: $size-5;
+		}
+	}
+	.box {
+		background: $yellow;
+		.count {
+			display:block;
+			color:$primary;
+			background:$white;
 			font-weight:$weight-bold;
 			font-size:$size-3;
 			border-radius:50%;
@@ -238,8 +290,9 @@ section#episodes {
 }
 
 #subscribe {
+	background:$white;
 	a {
-		color:$blue;
+		color:$yellow;
 		text-decoration:underline;
 		transition: opacity .3s;
 		&:hover {
@@ -314,30 +367,110 @@ section#events {
 	}
 }
 
-section#survey {
-	background:$pink;
-
-	.box {
-		padding:30px;
-
+section#aboutus {
+	background:$blue;
+	h2 {
+		color:$white;
+		margin-bottom:$gap/4;
+		font-size:$size-3;
+		font-weight:$weight-bold;
+		letter-spacing:.66px;
 		@include mobile {
-			h2 {
-				font-size: 1.5rem;
-			}
+			font-size: $size-5;
 		}
 	}
+	.box {
+		background:$blue;
+		.count {
+			display:block;
+			color:$primary;
+			background:$blue;
+			font-weight:$weight-bold;
+			font-size:$size-3;
+			border-radius:50%;
+			height:45px;
+			width:45px;
+			text-align:center;
+			padding:0 2px 3px 0;
+		}
+		h3 {
+			font-family: $family-secondary;
+			font-size:$size-3;
+			line-height:$size-3;
+			font-weight:bold;
+			margin-bottom:.5rem;
+			color:$white;
+		}
+		p {
+			color: $white;
+		}
+	}
+}
 
-	.box small {
-		font-family:$family-secondary;
+section#survey {
+	background:$primary;
+	h2 {
+		color:$white;
+		margin-bottom:$gap/4;
+		font-size:$size-3;
+		font-weight:$weight-bold;
+		letter-spacing:.66px;
+		@include mobile {
+			font-size: $size-5;
+		}
+	}
+	.box {
+		background:$red;
+		.count {
+			display:block;
+			color:$primary;
+			background:$pink;
+			font-weight:$weight-bold;
+			font-size:$size-3;
+			border-radius:50%;
+			height:45px;
+			width:45px;
+			text-align:center;
+			padding:0 2px 3px 0;
+		}
+		h3 {
+			font-family: $family-secondary;
+			font-size:$size-3;
+			line-height:$size-3;
+			font-weight:bold;
+			margin-bottom:.5rem;
+			color:$primary;
+			text-align:center;
+		}
+		p {
+			color: $primary;
+			text-align:center;
+		}
+	}
+}
+
+#subscribe {
+	a {
+		color:$blue;
+		text-decoration:underline;
+		transition: opacity .3s;
+		&:hover {
+			opacity:.9;
+		}
+	}
+	img {
+		display:inline-block;
+		max-height:72px;
 	}
 }
 
 footer.footer {
+	background:$white;
 	padding:12px 24px;
 	font-family:$family-secondary;
-	color: $white;
+	color: $primary;
 	a, a:hover {
-		color:$white;
+		color:$primary;
 		text-decoration:underline;
 	}
 	a:hover {
@@ -353,3 +486,10 @@ footer.footer {
 		padding-top:$gap*2;
 	}
 }
+
+.centerimg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+  }
