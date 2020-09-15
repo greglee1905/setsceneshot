@@ -1,3 +1,8 @@
+title: Preserve This Podcast
+description: Preserve This Podcast is a project funded by the Andrew W. Mellon Foundation. We want to make sure that podcasts don’t disappear as software formats change and RSS hosting services go down.
+baseurl: ""
+url: "http://www.preservethispodcast.org"
+
 # Markdown settings
 markdown: kramdown
 
@@ -20,13 +25,13 @@ plugins:
   - jekyll-sitemap
 
 # Podcast Feed settings
-title:          Set, Scene, Shot.
-description:    "Curious about the meaning behind the burning of a boyfriend in Midsommar? Or the doppelganger dance in Annihilation? Join us for Set Scene Shot where we dissect scenes and themes from your favorite independent films. We’ll examine the cultural context, visual symbolism and subtle artistry which ground iconic cinema scenes. Airing Tuesdays, every other week!"
-email:          gerg350z@gmail.com
-subtitle:       "none"
-url:            https://greglee1905.github.io/setsceneshot/
+title:          Preserve This Podcast
+email:          preservethispodcast@protonmail.com
+description:    "Preserve This Podcast is an Andrew W. Mellon grant-funded project hosted by the Metropolitan New York Library Council (METRO) to help podcasters protect their work against the threats of digital decay."
+subtitle:       "A podcast about saving your podcast."
+url:            http://preservethispodcast.org/
 language:       en-us
-author:         Vasiliki Karahalios & Greg Lee
+author:         PreserveThisPodcast
 copyright:      "CC BY 4.0"
 
 feed:
