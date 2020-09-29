@@ -4,12 +4,9 @@
 	<nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-menu" id="navMenu">
 		<a href="{{ base }}/#abouttheshow">About</a>
-		{% if site.data.content.episodes %}<a href="{{ base }}/#podcast">Podcast</a>{% endif %}
-		<a href="{{ site.data.content.twitter_link }}" target="_blank"><meta name="twitter:card" content="twitter icon link out to @preservethispod twitter feed">
-			<span class="icon">
-			  <i class="fab fa-twitter"></i>
-			</span>
-		</a>
+		<a data-modal="#subscribe" href="#">Subscribe</a>
+		{% if site.data.content.episodes %}<a href="{{ base }}/#podcast">Episodes</a>{% endif %}
+		<a href="https://github.com/greglee1905/setsceneshot">Code</a>
     </div>
     <a role="button" class="navbar-burger is-hidden-desktop" data-target="navMenu" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
