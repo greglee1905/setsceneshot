@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Ep. 5 - Suspiria"
-date: 2020-27-10 06:00:00
+date: 2020-10-27 06:00:00
 file: https://ia801404.us.archive.org/9/items/sss_suspiria/sss_suspiria.mp3
 file_itunes: https://ia801404.us.archive.org/9/items/sss_suspiria/sss_suspiria.mp3
 excerpt: Happy Halloween everybody. We hope you are doing some safe Trick or Treating if it is possible, or finding another way to celebrate. If you ended up watching this crazy cult film, we hope you got something worthwhile, because we are still searching for meaning. 
