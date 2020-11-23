@@ -13,13 +13,13 @@ layout: default
 
 <section id="abouttheshow" class="section" name="abouttheshow">
 	<div class="container">
-		<h2>About the Show</h2>
+		<h2>About Set, Scene, Shot.</h2>
 		<div class="box">
 			<div class="columns is-vcentered">
 			<div class="column">
 			<div class="columns is-vcentered is-mobile">
 				<div class="column">
-					<h3>Curious about the meaning behind the burning of a boyfriend in Midsommar? Or the doppelganger dance in Annihilation? <br> <br>Join us for Set, Scene, Shot. where we dissect scenes and themes from your favorite independent films. We’ll examine the cultural context, visual symbolism and subtle artistry which ground iconic cinema scenes. Airing Tuesdays, bi-weekly!</h3>
+					<h3>Curious about the meaning behind the burning of a boyfriend in Midsommar? Or the doppelganger dance in Annihilation? <br> <br>Join us for Set, Scene, Shot. where we dissect scenes and themes from your favorite independent films. We’ll examine the cultural context, visual symbolism and subtle artistry which ground iconic cinema scenes. Airing Tuesdays, bi-monthly!</h3>
 				</div>
 			</div>
 			</div>
@@ -114,9 +114,16 @@ layout: default
 	  						<img src="{{base}}/assets/images/google_icon.svg" alt="Subscribe on Google Podcasts"><br />
 	  						Google Podcasts</a></strong>
 	  				</div>
+					  {% endif %}
+					{% if site.data.content.spotify_link %}
+	  				<div class="column">
+	  					<strong><a href="{{ site.data.content.spotify_link }}">
+	  						<img src="{{base}}/assets/images/spotify.svg" alt="Subscribe on Spotify"><br />
+	  						Spotify</a></strong>
+	  				</div>
 	  				{% endif %}
 	  			</div>
-	  			{% if site.data.content.stitcher_link %}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="{{ site.data.content.stitcher_link }}">Stitcher</a>{% endif %}{% if site.data.content.rss_link %}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="{{ site.data.content.rss_link }}">RSS Feed</a>{% endif %}
+	  			{% if site.data.content.stitcher_link %}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="{{ site.data.content.stitcher_link }}">Stitcher</a>{% endif %}{% if site.data.content.rss_link %}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="{{ site.data.content.rss_link }}">RSS Feed</a>{% endif %} |
 	  		</div>
 		</div>
 	</div>
@@ -151,15 +158,19 @@ layout: default
 
 <section id="survey" class="section">
 	<div class="container">
-		<h2>Extras</h2>
-		<div class="box">
+		<div class="box has-text-centered">
+			<div class="content">
+				<a data-modal="#subscribe" href="#" class="button is-primary is-large"><img src="{{base}}/assets/images/subscribe.png" alt="Email_Logo">&nbsp; Subscribe</a>
+			</div>
+			<div class="content">
+				<a href="mailto:setsceneshotpodcast@gmail.com" target="_blank" class="button is-primary is-large"><img src="{{base}}/assets/images/email.png" alt="Email_Logo">&nbsp; Contact Us!</a>
+			</div>
 			<div class="content">
 				<a href="https://github.com/mnylc/preservethispodcast" target="_blank" class="button is-primary is-large"><img src="{{base}}/assets/images/github.png" alt="GitHub logo icon representing Github">&nbsp; Source Code</a>
 			</div>
 		</div>
-
-
 	</div>
+
 </section>
 
 

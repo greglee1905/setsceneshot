@@ -3,10 +3,11 @@
 	<a href="{{ base  }}" class="is-pulled-left"><h1>Set, Scene, Shot.</h1></a>
 	<nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-menu" id="navMenu">
-		<a href="{{ base }}/#abouttheshow">About</a>
+    <a href="{{ base }}/#abouttheshow">About</a>
+    {% if site.data.content.episodes %}<a href="{{ base }}/#podcast">Episodes</a>{% endif %}
 		<a data-modal="#subscribe" href="#">Subscribe</a>
-		{% if site.data.content.episodes %}<a href="{{ base }}/#podcast">Episodes</a>{% endif %}
-		<a href="https://github.com/greglee1905/setsceneshot">Code</a>
+    <a href="mailto:setsceneshotpodcast@gmail.com">Get in Touch</a>
+    <a href="https://github.com/greglee1905/setsceneshot">Code</a>
     </div>
     <a role="button" class="navbar-burger is-hidden-desktop" data-target="navMenu" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
