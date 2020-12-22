@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Ep. 9 - The Art of Self Defense"
+title: "Ep. 9 - There Will Be Blood"
 date: 2020-12-08 06:00:00
 file: https://ia601409.us.archive.org/11/items/sss_twbb/sss_twbb.mp3
 file_itunes: https://ia601409.us.archive.org/11/items/sss_twbb/sss_twbb.mp3
